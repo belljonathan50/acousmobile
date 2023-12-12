@@ -1,0 +1,91 @@
+BPM 40
+
+	oscsend pi0 "127.0.0.1" : 5001 "/son"
+	oscsend pi1 "192.168.0.101" : 5000 "/son"
+	oscsend pi2 "192.168.0.102" : 5000 "/son"
+	oscsend pi3 "192.168.0.103" : 5000 "/son"
+  oscsend pi4 "192.168.0.104" : 5000 "/son"
+
+  oscsend vol0 "127.0.0.1" : 5001 "/vol"
+  oscsend vol1 "192.168.0.101" : 5000 "/vol"
+	oscsend vol2 "192.168.0.102" : 5000 "/vol"
+	oscsend vol3 "192.168.0.103" : 5000 "/vol"
+  oscsend vol4 "192.168.0.104" : 5000 "/vol"
+
+  oscsend rev0 "127.0.0.1" : 5001 "/rev"
+  oscsend rev1 "192.168.0.101" : 5000 "/rev"
+	oscsend rev2 "192.168.0.102" : 5000 "/rev"
+	oscsend rev3 "192.168.0.103" : 5000 "/rev"
+  oscsend rev4 "192.168.0.104" : 5000 "/rev"
+
+
+NOTE C2 1 _1_1
+	vol2 50
+	pi2 4 33
+NOTE C#2 1 _1_2
+	vol0 40
+	pi0 4 1
+NOTE D2 1 _1_3
+	rev2 70
+	pi2 4 43
+NOTE D#2 1 _1_4
+
+
+NOTE C2 1 _2_1
+	pi0 3 35
+NOTE C#2 1 _2_2
+	vol2 50
+	pi2  5 13
+NOTE D2 1 _2_3
+	rev0 20
+	pi0 3 35
+	0.25 pi2 3 35
+	
+NOTE D#2 1 _2_4
+
+NOTE C2 1 _3_1
+NOTE C#2 1 _3_2
+NOTE D2 1 _3_3
+  rev3 20
+	pi3  1 34
+NOTE D#2 1 _3_4
+
+
+
+NOTE C2 1 _4_1
+
+BPM 30
+
+NOTE C#2 1 _4_2
+	pi1  3 12
+NOTE D2 1 _4_3
+NOTE D#2 1 _4_4
+NOTE C2 1 _5_1
+	pi3  1 54
+NOTE C#2 1 _5_2
+	1.5 pi2  3 212
+NOTE D2 1 _5_3
+NOTE D#2 1 _5_4
+	pi1  1 22
+	pi3  1 44
+
+NOTE C2 1 _6_1
+NOTE C#2 1 _6_2
+NOTE D2 1 _6_3
+	pi3  1 92
+NOTE D#2 1 _6_4
+NOTE C2 1 _7_1
+	pi2  1 57
+NOTE C#2 1 _7_2
+NOTE D2 1 _7_3
+NOTE D#2 1 _7_4
+	pi1  1 2
+	pi2  1 5
+	pi3  1 24
+
+
+NOTE C2 1 _8_1
+NOTE C#2 1 _8_2
+NOTE D2 1 _8_3
+NOTE D#2 1 _8_4
+	pi2  1 121
